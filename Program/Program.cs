@@ -9,8 +9,7 @@ namespace Program
     public class Program
     {
 
-        public int Id { get; set; }
-        public String PlayerName { get; set; }
-        public int Score { get; set; }
+
+
     }
 }

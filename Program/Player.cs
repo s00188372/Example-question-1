@@ -8,5 +8,20 @@ namespace Program
 {
     class Player
     {
+
+        public int Id { get; }
+        public String PlayerName { get; set; }
+        public int Score { get; set; }
+
+        public Player(int id, string playerName, int score)
+        {
+
+            Id = id;
+            PlayerName = playerName;
+            Score = score;
+
+        }
+
+
     }
 }

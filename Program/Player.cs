@@ -11,7 +11,7 @@ namespace Program
 
         public int Id { get; }
         public String PlayerName { get; set; }
-        public int Score { get; set; }
+        public int Score { get; private set; }
 
         public Player(int id, string playerName, int score)
         {
@@ -22,6 +22,11 @@ namespace Program
 
         }
 
+        public void InscreaseScore(int Add)
+        {
+            Score += Add;
+        }
+        
 
     }
 }

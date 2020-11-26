@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 
 namespace Program
 {
@@ -29,6 +30,19 @@ namespace Program
             player2.InscreaseScore(10);
 
         }
+
+        private static void Display(List<Player> players)
+        {
+            WriteLine("{0,-10}{1,-10}{2,-10}{3,-10}{4,-10}", "Player 1", "Player 2", "Player 3", "Player 4", "Player 5");
+
+            foreach (Player player in players)
+            {
+                Write("{0,-10}",player.Score);
+            }
+        }
+
+
+
 
 
     }
